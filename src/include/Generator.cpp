@@ -15,16 +15,17 @@ bool Generator::getFormula(){
   return processFormula( rawInput );
 }
 
-void Generator::generate(){
+void Generator::generate( bool reverse ){
   printVSeparator('=');
   printAtoms();
   printHSeparator();
   cout << m_formula << endl;
   printVSeparator('-');
 
-  int currentCase = pow( 2, m_atoms.size()) - 1; 
+  int currentCase = reverse ? pow( 2, m_atoms.size()) - 1 : 0;
+  int increment = reverse ? -1 : 1;
 
-  while( currentCase >= 0 ){
+  while( currentCase >= 0 && currentCase < pow( 2, m_atoms.size()) ){
     for( int atom = 0; atom < m_atoms.size(); atom++ )
       m_atoms[ m_atoms.size() - atom -1 ].second = ( ( currentCase >> atom ) & 1 );
 
@@ -33,7 +34,7 @@ void Generator::generate(){
 
     printHSeparator();
     cout << calculateRow() << endl;
-    currentCase--;
+    currentCase += increment;
   }
   printVSeparator('=');
 }

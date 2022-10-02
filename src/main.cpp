@@ -8,13 +8,13 @@ using namespace std;
 
 int main( int argc, char * argv[] ){
   Args args = Args(argc, argv);
-  if( args.processArguments() ) return 1;
+  int rev = args.processArguments(); 
 
   while( true ){
     Generator generator = Generator();
     if( ! generator.getFormula() ) break;
-    generator.generate();
+    generator.generate( rev );
   }
 
-  return 0;
+  return 1;
 }

@@ -28,7 +28,7 @@ class Generator
     ~Generator  ( void );
 
     bool getFormula();
-    void generate();
+    void generate( bool );
   protected:
   private:
     bool processFormula( string );
