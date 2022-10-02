@@ -11,7 +11,7 @@ compile: $(OBJECTS)
 	$(CXX) $(CXXFLAGS) -o $(EXECUTABLE) $(OBJECTS) $(LDFLAGS)
 
 run:
-	./ttg
+	./$(EXECUTABLE)
 	
 
 clean:
