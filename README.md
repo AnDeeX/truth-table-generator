@@ -2,9 +2,7 @@
 
 ## Purpose
 This program generates a truth table for a given logical expression.
-Example:
-expression: `a & ( b | -c )`
-will generate following table:
+For Example, expression `a & ( b | -c )` will generate following table:
 ```
 a b c | a & ( b | -c )
 ----------------------
