@@ -1,0 +1,23 @@
+  Truth Table Generator Help Page
+
+  How to use:
+    Type in your formula in the program and it will generate the truth table for you.
+    Only use lowercase letters for 
+
+    Note that the program does not have a lot of error handling.
+
+
+  Symbols:
+    Conjunction:  &   Ex.: p & q
+    Disjuction:   |   Ex.: p | q
+    Negation:     -   Ex.: -p
+    Implies:      >   Ex.: p > q
+    Equivalence:  =   Ex.: p = q
+    XOR:          X   Ex.: p X q
+    
+  Constants:
+    K: contradiction
+    T: tautology
+
+  Brackets:
+    Only use round brackets ()
