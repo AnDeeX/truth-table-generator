@@ -13,7 +13,7 @@
     Negation:     -   Ex.: -p
     Implies:      >   Ex.: p > q
     Equivalence:  =   Ex.: p = q
-    XOR:          X   Ex.: p X q
+    XOR:          ^   Ex.: p X q
     
   Constants:
     K: contradiction

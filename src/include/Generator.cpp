@@ -225,7 +225,6 @@ bool Generator::isValid( string input ){
     }
   }
   if( totalAtoms - 1 != totalOperators ){
-    cout << "atoms: " << totalAtoms << ", operators: " << totalOperators << endl;
     cout << "Some Atoms are missing an operator!" << endl;
     return true;
   }

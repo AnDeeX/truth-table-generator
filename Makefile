@@ -5,13 +5,14 @@ INC = ./src/include/
 OBJECTS = main.o Args.o Generator.o
 SRC = $(shell find $(INC) -type f -name '*.cpp')
 
-all:	compile run
+all:	compile
 
 compile: $(OBJECTS) 
 	$(CXX) $(CXXFLAGS) -o $(EXECUTABLE) $(OBJECTS) $(LDFLAGS)
 
 run:
-	./$(EXECUTABLE)
+	./ttg
+	
 
 clean:
 	rm $(EXECUTABLE) $(OBJECTS)
